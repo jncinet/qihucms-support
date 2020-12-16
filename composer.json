@@ -1,0 +1,30 @@
+{
+  "name": "jncinet/qihucms-support",
+  "description": "qihucms support.",
+  "keywords": [
+    "qihucms",
+    "site",
+    "help"
+  ],
+  "homepage": "https://www.qihucms.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhangye",
+      "email": "y@qilephp.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Qihucms\\Support\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Qihucms\\Support\\SupportServiceProvider"
+      ]
+    }
+  }
+}
