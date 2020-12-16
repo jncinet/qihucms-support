@@ -1,7 +1,5 @@
-## 安装
+## 安装扩展
 
 ```shell
-$ composer require jncinet/qihucms-site-help
+$ composer require jncinet/qihucms-support
 ```
-
-详细内容请查看路由文件
