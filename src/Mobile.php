@@ -1,18 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: zhangye
- * Date: 2020/12/16
- * Time: 1:35 PM
- */
 
 namespace Qihucms\Support;
 
-
 class Mobile
 {
-    public static function check()
+    /**
+     * 验证是否手机号码
+     *
+     * @param $mobile
+     * @return false|int
+     */
+    public static function check($mobile)
     {
-        
-}
+        return preg_match("/^1[345789]\d{9}$/", $mobile);
+    }
 }
