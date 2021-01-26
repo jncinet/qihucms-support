@@ -9,12 +9,14 @@ namespace Qihucms\Support;
 class Str
 {
     /**
+     * 是否包含汉字
+     *
      * @param string $str
      * @return false|int
      */
     public static function includingChinese(string $str)
     {
-        return preg_match("/[^\x00-\x80]/", $str);
+        return preg_match("/([\x81-\xfe][\x40-\xfe])/", $str, $match);
     }
 
     /**
